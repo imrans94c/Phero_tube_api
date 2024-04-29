@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHeroTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/34b99e7d22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <!-- <a class="btn btn-ghost text-xl"><i class="fa-solid fa-circle-play bg-white text-red-600"></i><span class="text-red-600">PH</span>Tube</a> -->
+                  <img class="w-40 h-9" src="images/Group 26.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <button id="sortByView" class="btn btn-active w-36 h-10">Sort by view</button>
+                  <!-- <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                  </ul> -->
+                </div>
+                <div class="navbar-end">
+                  <a href="blog.html" class="btn w-16 h-10 bg-[#FF1F3D] text-white">Blog</a>
+                </div>
+            </div>
+            <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+        </section>
+
+    </header>
+
+    <main>
+        <div class="tab-container w-full">
+            <div id="tab-container" class="tabs tabs p-5 w-96 m-auto text-center flex justify-center gap-5">
+
+            </div>
+        </div>
+<!-- align-middle text-center mx-auto -->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            </div>
+            <div id="loading-spinner" class="hidden text-center my-56">
+                <span class="loading loading-spinner text-accent loading-lg">
+                </span>
+            </div>
+    </main>
+    
+</body>
+<script src="index.js"></script>
+</html>
